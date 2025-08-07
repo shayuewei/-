@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>欢迎 - 亲子互动成长空间</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+      font-family: "微软雅黑", Arial, sans-serif;
+      animation: bgMove 10s ease-in-out infinite alternate;
+    }
+    @keyframes bgMove {
+      0% { background-position: 0% 50%; }
+      100% { background-position: 100% 50%; }
+    }
+    .welcome-box {
+      background: rgba(255,255,255,0.95);
+      padding: 56px 36px 32px 36px;
+      border-radius: 24px;
+      box-shadow: 0 8px 40px rgba(99,102,241,0.15), 0 1.5px 8px rgba(0,0,0,0.04);
+      text-align: center;
+      min-width: 320px;
+      max-width: 90vw;
+      animation: fadeIn 1.2s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .welcome-logo {
+      font-size: 3.5rem;
+      margin-bottom: 18px;
+      animation: logoPop 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+    }
+    @keyframes logoPop {
+      0% { transform: scale(0.7); opacity: 0; }
+      80% { transform: scale(1.15); opacity: 1; }
+      100% { transform: scale(1); }
+    }
+    .welcome-title {
+      font-size: 2.3rem;
+      color: #6366f1;
+      margin-bottom: 18px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-shadow: 0 2px 8px #e0e7ff;
+    }
+    .welcome-tip {
+      font-size: 1.25rem;
+      color: #374151;
+      margin-bottom: 24px;
+      line-height: 1.7;
+    }
+    .copyright {
+      margin-top: 18px;
+      font-size: 0.95rem;
+      color: #a1a1aa;
+      letter-spacing: 1px;
+    }
+    @media (max-width: 500px) {
+      .welcome-box {
+        padding: 32px 8vw 24px 8vw;
+        min-width: unset;
+      }
+      .welcome-title {
+        font-size: 1.4rem;
+      }
+      .welcome-tip {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-box">
+    <div class="welcome-logo">👨‍👩‍👧‍👦</div>
+    <div class="welcome-title">欢迎使用亲子互动成长空间</div>
+    <div class="welcome-tip">在这里，家长与孩子可以更好地沟通、协作与成长。<br>让每一次互动都成为美好回忆！</div>
+    <div class="copyright">© 2024 亲子互动成长空间</div>
+  </div>
+  <script>
+    setTimeout(function() {
+      window.location.href = 'login.html';
+    }, 3000);
+  </script>
+</body>
+</html> 
